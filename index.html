@@ -3,51 +3,192 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+
   <title>T&A Business Engineering — Under Construction</title>
-  <meta name="description" content="T&A Business Engineering specializes in data management tools, business data analysis, and consulting." />
+
+  <meta
+    name="description"
+    content="T&A Business Engineering specializes in data management tools, business data analysis, and consulting."
+  />
+
   <meta property="og:title" content="T&A Business Engineering" />
-  <meta property="og:description" content="Engineering Your Success — Data tools, analytics, and business consulting." />
+  <meta
+    property="og:description"
+    content="Engineering Your Success — Data tools, analytics, and business consulting."
+  />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://theornix.github.io/T-A-Business-Engineering/" />
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>⚙️</text></svg>">
+  <meta
+    property="og:url"
+    content="https://theornix.github.io/T-A-Business-Engineering/"
+  />
+
+  <link
+    rel="icon"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>⚙️</text></svg>"
+  />
+
   <style>
-    :root{
-      --bg:#0b1220;
-      --card:#121a2b;
-      --text:#e6edf6;
-      --muted:#9fb3c8;
-      --accent:#3aa0ff;
-      --accent-2:#6be675;
-      --maxw:920px;
+    :root {
+      --bg: #0b1220;
+      --card: #121a2b;
+      --text: #e6edf6;
+      --muted: #9fb3c8;
+      --accent: #3aa0ff;
+      --accent-2: #6be675;
+      --maxw: 920px;
     }
-    *{box-sizing:border-box}
-    html,body{height:100%}
-    body{
-      margin:0; font:16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Arial;
-      color:var(--text); background:radial-gradient(1200px 600px at 80% -10%, #173058 0%, transparent 60%),
-                        radial-gradient(1000px 600px at -10% 100%, #112240 0%, transparent 60%), var(--bg);
-      display:flex; align-items:center; justify-content:center; padding:32px;
+
+    * {
+      box-sizing: border-box;
     }
-    .shell{ width:100%; max-width:var(--maxw); }
-    header{text-align:center; padding:32px 16px 12px;}
-    h1{ font-size:clamp(28px, 6vw, 44px); margin:0 0 8px; letter-spacing:0.4px }
-    .tag{ color:var(--muted); font-size:clamp(14px, 2.4vw, 18px) }
-    .grid{ display:grid; gap:20px; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); margin-top:28px }
-    .card{ background:linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0.02));
-           border:1px solid rgba(255,255,255,0.08); backdrop-filter: blur(6px);
-           border-radius:18px; padding:18px 18px }
-    h2{ font-size:18px; margin:0 0 8px; color:#cfe2ff }
-    p{ margin:0 0 8px }
-    .contact-list{ list-style:none; margin:0; padding:0 }
-    .contact-list li{ display:flex; gap:10px; align-items:center; padding:6px 0 }
-    a{ color:var(--accent); text-decoration:none }
-    a:hover{ text-decoration:underline }
-    .badge{ display:inline-block; padding:4px 10px; border-radius:999px; background:rgba(58,160,255,.18); border:1px solid rgba(58,160,255,.5); color:#cfe2ff; font-size:12px }
-    footer{ text-align:center; color:var(--muted); margin-top:22px; font-size:13px }
-    .uc{ display:inline-flex; gap:8px; align-items:center; justify-content:center; padding:8px 12px; border-radius:10px; background:rgba(255,255,255,.06); border:1px dashed rgba(255,255,255,.24); color:#d2d9e3; margin-top:10px }
-    .uc svg{ width:18px; height:18px; opacity:.9 }
-    @media (max-width:420px){ .contact-list li{ align-items:flex-start } }
+
+    html,
+    body {
+      min-height: 100%;
+    }
+
+    body {
+      margin: 0;
+      font: 16px/1.6 system-ui, -apple-system, Segoe UI, Roboto,
+        Ubuntu, Cantarell, Noto Sans, Arial;
+
+      color: var(--text);
+
+      background:
+        radial-gradient(
+          1200px 600px at 80% -10%,
+          #173058 0%,
+          transparent 60%
+        ),
+        radial-gradient(
+          1000px 600px at -10% 100%,
+          #112240 0%,
+          transparent 60%
+        ),
+        var(--bg);
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 32px;
+    }
+
+    .shell {
+      width: 100%;
+      max-width: var(--maxw);
+    }
+
+    header {
+      text-align: center;
+      padding: 32px 16px 12px;
+    }
+
+    h1 {
+      font-size: clamp(28px, 6vw, 44px);
+      margin: 0 0 8px;
+      letter-spacing: 0.4px;
+    }
+
+    .tag {
+      color: var(--muted);
+      font-size: clamp(14px, 2.4vw, 18px);
+    }
+
+    .grid {
+      display: grid;
+      gap: 20px;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      margin-top: 28px;
+    }
+
+    .card {
+      background: linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 0.04),
+        rgba(255, 255, 255, 0.02)
+      );
+
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      backdrop-filter: blur(6px);
+      border-radius: 18px;
+      padding: 18px;
+    }
+
+    h2 {
+      font-size: 18px;
+      margin: 0 0 8px;
+      color: #cfe2ff;
+    }
+
+    p {
+      margin: 0 0 8px;
+    }
+
+    .contact-list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .contact-list li {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      padding: 6px 0;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 4px 10px;
+      border-radius: 999px;
+      background: rgba(58, 160, 255, 0.18);
+      border: 1px solid rgba(58, 160, 255, 0.5);
+      color: #cfe2ff;
+      font-size: 12px;
+    }
+
+    footer {
+      text-align: center;
+      color: var(--muted);
+      margin-top: 22px;
+      font-size: 13px;
+    }
+
+    .uc {
+      display: inline-flex;
+      gap: 8px;
+      align-items: center;
+      justify-content: center;
+      padding: 8px 12px;
+      border-radius: 10px;
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px dashed rgba(255, 255, 255, 0.24);
+      color: #d2d9e3;
+      margin-top: 10px;
+    }
+
+    .uc svg {
+      width: 18px;
+      height: 18px;
+      opacity: 0.9;
+    }
+
+    @media (max-width: 420px) {
+      .contact-list li {
+        align-items: flex-start;
+      }
+    }
   </style>
+
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -65,67 +206,176 @@
   }
   </script>
 </head>
+
 <body>
+
   <main class="shell">
+
     <header>
-      <div class="badge">T&amp;A Business Engineering IKE</div>
-      <h1>Engineering Your Success</h1>
-      <div class="uc">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M10.325 4.317a1 1 0 0 1 1.35 0l8 7.2A1 1 0 0 1 19.999 13H4a1 1 0 0 1-.675-1.717l8-6.966zM4 15h16v3a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-3z"/></svg>
-        <span>Simple landing page while the site is under construction.</span>
+
+      <div class="badge">
+        T&amp;A Business Engineering IKE
       </div>
+
+      <h1>Engineering Your Success</h1>
+
+      <div class="uc">
+
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          fill="currentColor"
+        >
+          <path
+            d="M10.325 4.317a1 1 0 0 1 1.35 0l8 7.2A1 1 0 0 1 19.999 13H4a1 1 0 0 1-.675-1.717l8-6.966zM4 15h16v3a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-3z"
+          />
+        </svg>
+
+        <span>
+          Simple landing page while the site is under construction.
+        </span>
+
+      </div>
+
     </header>
 
+
     <section class="grid">
+
+      <!-- ABOUT US -->
+
       <article class="card">
+
         <h2>About Us</h2>
-        <p>T&amp;A Business Engineering specializes in developing and maintaining data management tools, analyzing business data, offering business consulting, and more.</p>
+
+        <p>
+          T&amp;A Business Engineering specializes in developing and
+          maintaining data management tools, analyzing business data,
+          offering business consulting, and more.
+        </p>
+
       </article>
 
+
+      <!-- CONTACT -->
+
       <article class="card">
+
         <h2>Get in Touch</h2>
+
         <ul class="contact-list">
-          <li>📧 <a href="mailto:Theomarioglou@gmail.com">Theomarioglou@gmail.com</a></li>
-          <li>📞 <a href="tel:+306975908909">+30 6975908909</a></li>
-          <li>📍 <a href="https://maps.google.com/?q=G.+Genimata+19-21,+Thessaloniki,+Greece" target="_blank">G. Genimata 19–21, Thessaloniki, Greece</a></li>
+
+          <li>
+            📧
+            <a href="mailto:Theomarioglou@gmail.com">
+              Theomarioglou@gmail.com
+            </a>
+          </li>
+
+          <li>
+            📞
+            <a href="tel:+306975908909">
+              +30 6975908909
+            </a>
+          </li>
+
+          <li>
+            📍
+            <a
+              href="https://maps.google.com/?q=G.+Genimata+19-21,+Thessaloniki,+Greece"
+              target="_blank"
+              rel="noopener"
+            >
+              G. Genimata 19–21, Thessaloniki, Greece
+            </a>
+          </li>
+
         </ul>
+
       </article>
+
+
+      <!-- COMPANY DETAILS -->
 
       <article class="card">
-        <h2>Company Details</h2>
-        <p>• Αριθμός ΓΕΜΗ: 177463906000</p>
-        <p>• ΑΦΜ: EL802496674</p>
-        
-      </article>
-<article class="card">
-  <h2>Οικονομικές Καταστάσεις</h2>
-  <p>
-    📄 
-    <a href="https://theornix.github.io/T-A-Business-Engineering/files/balance_sheet_2024.pdf" target="_blank" download>
-      Οικονομικές Καταστάσεις 2024 (PDF)
-    </a>
-  </p>
-</article>
-<article class="card">
-  <h2>Documents</h2>
-  <p>
-    📄 
-    <a href="https://theornix.github.io/T-A-Business-Engineering/files/T&A BUSINESS ENGINEERING ΙΚΕ - ΒΕΒΑΙΩΣΗ ΤΡΕΧΟΥΣΑΣ ΕΙΚΟΝΑΣ.pdf" target="_blank" download>
-      T&A BUSINESS ENGINEERING ΙΚΕ - ΒΕΒΑΙΩΣΗ ΤΡΕΧΟΥΣΑΣ ΕΙΚΟΝΑΣ (PDF)
-    </a>
-  </p>
-</article>
 
-      
+        <h2>Company Details</h2>
+
+        <p>• Αριθμός ΓΕΜΗ: 177463906000</p>
+
+        <p>• ΑΦΜ: EL802496674</p>
+
+      </article>
+
+
+      <!-- FINANCIAL STATEMENTS -->
+
+      <article class="card">
+
+        <h2>Οικονομικές Καταστάσεις</h2>
+
+        <p>
+          📄
+          <a
+            href="files/balance_sheet_2024.pdf"
+            target="_blank"
+            rel="noopener"
+          >
+            Οικονομικές Καταστάσεις 2024 (PDF)
+          </a>
+        </p>
+
+        <p>
+          📄
+          <a
+            href="files/balance_sheet_2025.pdf"
+            target="_blank"
+            rel="noopener"
+          >
+            Οικονομικές Καταστάσεις 2025 (PDF)
+          </a>
+        </p>
+
+      </article>
+
+
+      <!-- COMPANY DOCUMENTS -->
+
+      <article class="card">
+
+        <h2>Documents</h2>
+
+        <p>
+          📄
+          <a
+            href="files/T&amp;A%20BUSINESS%20ENGINEERING%20ΙΚΕ%20-%20ΒΕΒΑΙΩΣΗ%20ΤΡΕΧΟΥΣΑΣ%20ΕΙΚΟΝΑΣ.pdf"
+            target="_blank"
+            rel="noopener"
+          >
+            T&amp;A BUSINESS ENGINEERING ΙΚΕ -
+            ΒΕΒΑΙΩΣΗ ΤΡΕΧΟΥΣΑΣ ΕΙΚΟΝΑΣ (PDF)
+          </a>
+        </p>
+
+      </article>
+
     </section>
 
+
     <footer>
-      © <span id="y"></span> T&amp;A Business Engineering IKE • GitHub Pages
+
+      © <span id="y"></span>
+      T&amp;A Business Engineering IKE • GitHub Pages
+
     </footer>
+
   </main>
 
+
   <script>
-    document.getElementById('y').textContent = new Date().getFullYear();
+    document.getElementById("y").textContent =
+      new Date().getFullYear();
   </script>
+
 </body>
 </html>
