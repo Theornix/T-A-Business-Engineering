@@ -89,11 +89,6 @@
       letter-spacing: 0.4px;
     }
 
-    .tag {
-      color: var(--muted);
-      font-size: clamp(14px, 2.4vw, 18px);
-    }
-
     .grid {
       display: grid;
       gap: 20px;
@@ -150,7 +145,7 @@
       display: flex;
       gap: 10px;
       align-items: flex-start;
-      padding: 8px 0;
+      padding: 7px 0;
     }
 
     .badge {
@@ -178,7 +173,7 @@
       padding: 8px 12px;
       border-radius: 10px;
       background: rgba(255, 255, 255, 0.06);
-      border: 1px dashed rgba(255,255,255,.24);
+      border: 1px dashed rgba(255, 255, 255, 0.24);
       color: #d2d9e3;
       margin-top: 10px;
     }
@@ -190,6 +185,10 @@
     }
 
     @media (max-width: 420px) {
+      body {
+        padding: 20px;
+      }
+
       .contact-list li {
         align-items: flex-start;
       }
@@ -212,7 +211,6 @@
     }
   }
   </script>
-
 </head>
 
 <body>
@@ -251,6 +249,7 @@
 
 
     <section class="grid">
+
 
       <!-- ABOUT US -->
 
@@ -311,9 +310,13 @@
 
         <h2>Company Details</h2>
 
-        <p>• Αριθμός ΓΕΜΗ: 177463906000</p>
+        <p>
+          • Αριθμός ΓΕΜΗ: 177463906000
+        </p>
 
-        <p>• ΑΦΜ: EL802496674</p>
+        <p>
+          • ΑΦΜ: EL802496674
+        </p>
 
       </article>
 
@@ -325,25 +328,32 @@
         <h2>Οικονομικές Καταστάσεις</h2>
 
         <div class="document-link">
+
           <span>📄</span>
+
           <a
-            href="files/balance_sheet_2024.pdf"
+            href="./files/balance_sheet_2024.pdf"
             target="_blank"
             rel="noopener"
           >
             Οικονομικές Καταστάσεις 2024 (PDF)
           </a>
+
         </div>
 
+
         <div class="document-link">
+
           <span>📄</span>
+
           <a
-            href="files/balance_sheet_2025.pdf"
+            href="./files/balance_sheet_2025.pdf"
             target="_blank"
             rel="noopener"
           >
             Οικονομικές Καταστάσεις 2025 (PDF)
           </a>
+
         </div>
 
       </article>
@@ -360,7 +370,7 @@
           <span>📄</span>
 
           <a
-            href="files/T%26A%20BUSINESS%20ENGINEERING%20ΙΚΕ%20-%20ΒΕΒΑΙΩΣΗ%20ΤΡΕΧΟΥΣΑΣ%20ΕΙΚΟΝΑΣ.pdf"
+            href="./files/company_status.pdf"
             target="_blank"
             rel="noopener"
           >
@@ -371,6 +381,7 @@
         </div>
 
       </article>
+
 
     </section>
 
