@@ -146,6 +146,13 @@
       text-decoration: underline;
     }
 
+    .document-link {
+      display: flex;
+      gap: 10px;
+      align-items: flex-start;
+      padding: 8px 0;
+    }
+
     .badge {
       display: inline-block;
       padding: 4px 10px;
@@ -171,7 +178,7 @@
       padding: 8px 12px;
       border-radius: 10px;
       background: rgba(255, 255, 255, 0.06);
-      border: 1px dashed rgba(255, 255, 255, 0.24);
+      border: 1px dashed rgba(255,255,255,.24);
       color: #d2d9e3;
       margin-top: 10px;
     }
@@ -205,11 +212,14 @@
     }
   }
   </script>
+
 </head>
 
 <body>
 
   <main class="shell">
+
+    <!-- HEADER -->
 
     <header>
 
@@ -314,8 +324,8 @@
 
         <h2>Οικονομικές Καταστάσεις</h2>
 
-        <p>
-          📄
+        <div class="document-link">
+          <span>📄</span>
           <a
             href="files/balance_sheet_2024.pdf"
             target="_blank"
@@ -323,10 +333,10 @@
           >
             Οικονομικές Καταστάσεις 2024 (PDF)
           </a>
-        </p>
+        </div>
 
-        <p>
-          📄
+        <div class="document-link">
+          <span>📄</span>
           <a
             href="files/balance_sheet_2025.pdf"
             target="_blank"
@@ -334,7 +344,7 @@
           >
             Οικονομικές Καταστάσεις 2025 (PDF)
           </a>
-        </p>
+        </div>
 
       </article>
 
@@ -345,22 +355,27 @@
 
         <h2>Documents</h2>
 
-        <p>
-          📄
+        <div class="document-link">
+
+          <span>📄</span>
+
           <a
-            href="files/T&amp;A%20BUSINESS%20ENGINEERING%20ΙΚΕ%20-%20ΒΕΒΑΙΩΣΗ%20ΤΡΕΧΟΥΣΑΣ%20ΕΙΚΟΝΑΣ.pdf"
+            href="files/T%26A%20BUSINESS%20ENGINEERING%20ΙΚΕ%20-%20ΒΕΒΑΙΩΣΗ%20ΤΡΕΧΟΥΣΑΣ%20ΕΙΚΟΝΑΣ.pdf"
             target="_blank"
             rel="noopener"
           >
             T&amp;A BUSINESS ENGINEERING ΙΚΕ -
             ΒΕΒΑΙΩΣΗ ΤΡΕΧΟΥΣΑΣ ΕΙΚΟΝΑΣ (PDF)
           </a>
-        </p>
+
+        </div>
 
       </article>
 
     </section>
 
+
+    <!-- FOOTER -->
 
     <footer>
 
@@ -373,8 +388,10 @@
 
 
   <script>
+
     document.getElementById("y").textContent =
       new Date().getFullYear();
+
   </script>
 
 </body>
